@@ -17,6 +17,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+
+    "outDir": "./dist",
+    "sourceMap": true,
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
