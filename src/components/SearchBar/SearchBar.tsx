@@ -63,10 +63,15 @@ const model = [
   'Land',
 ];
 
-export const SearchBar =( prop:any) => {
+
+
+export const SearchBar =({onSubmit}) => {
   return (
     <MainContainer>
-      <Formik initialValues={initialValue} onSubmit={prop.search}>
+      <Formik initialValues={initialValue} onSubmit={(values, formik) => {
+        onSubmit(values)
+        formik.resetForm()
+      }}>
         <Form>
           <FormContainer>
             <InputContainer>

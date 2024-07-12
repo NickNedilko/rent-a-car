@@ -1,11 +1,9 @@
-import logo  from '../../assets/logo-rent-car.png'
+import { AboutCompany } from '../../components/AboutCompany/AboutCompany';
 
 const Home = () =>{
 
     return(
-        <div>
-            <img src={logo} alt="logo" />
-        </div>
+       <AboutCompany/>
     )
 }
 

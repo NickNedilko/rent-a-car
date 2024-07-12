@@ -8,6 +8,7 @@ import { CarList } from "../../components/CarList/CarList";
 import { LoadMoreBtn } from "../../components/CarList/CarList.styled";
 import { Loader } from "../../components/Loader/Loader";
 import { Wrapper } from "../../components/Loader/Loader.styled";
+import { SearchBar } from "../../components/SearchBar/SearchBar";
 
 
 
@@ -44,9 +45,27 @@ const CatalogPage = ()=>{
       setPage(prevState=>prevState + 1)
     
   }
+  
+
+  
+  const handleSubmit = (values) => {
+    const { name, price, from, to } = values;
+
+    if (name !== '') {
+      const sortedCars = cars.filter(car => car.make === name)
+      console.log('name', sortedCars)
+      setCars(sortedCars);
+    }
+    if (price !== '' ) {
+      const sortedCars = cars.filter(car => car.rentalPrice >= price)
+      console.log('price',sortedCars)
+      setCars(sortedCars);
+    }
+}
 
   return(
     <>
+      <SearchBar onSubmit={handleSubmit } />
     <CarList cars={cars} toggleFavorite={toggleFavorite}/>
       {isLoading && <Loader />}
       <Wrapper>

@@ -12,16 +12,11 @@ interface CardProps {
     toggleFavorite: (car: Car)=>void
 }
 
-
 export const Card: FC<CardProps> = ({car, toggleFavorite}) =>{
-
-    const [isModal, setIsModal] = useState<boolean>(false);
-console.log(isModal)
-    const toggleModal = ()=>{
-        setIsModal(prevState => !prevState)
-    }
+const [isModal, setIsModal] = useState<boolean>(false);
+const toggleModal = ()=>{
+setIsModal(prevState => !prevState)}
 const { getLocal} = useFavorites();
-
 
 return(
 <>
