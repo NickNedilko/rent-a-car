@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import logo  from '../../assets/logo-rent-car.png'
 import { Btn, Img, Item, List, Title, Wrapper } from './AboutCompany.styled'
 

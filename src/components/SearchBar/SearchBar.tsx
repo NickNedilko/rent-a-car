@@ -12,6 +12,7 @@ import {
   InputContainer,
 } from './SearchBar.styled';
 
+
 const initialValue = {
   name: '',
   price: '',

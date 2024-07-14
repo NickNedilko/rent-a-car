@@ -14,7 +14,7 @@ export const CarInfo: FC<CarInfoProps> = ({car, onClose})=>{
     return(
         <Wrapper>
             <ul>
-    <CarImg width='461' height="248" src={car.img} alt={car.model} />
+    <CarImg width='461' height="248" src='https://i.ytimg.com/vi/XGVVN-n-5D0/maxresdefault.jpg' alt={car.model} />
 <div>
 <CarName> {car.make} <Model>{car.model}</Model>, {car.year}</CarName>
 </div>

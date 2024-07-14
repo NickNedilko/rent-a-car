@@ -1,7 +1,5 @@
 import { getCars } from "../../apiServices/apiServices";
-
 import { useEffect, useState } from "react";
-import { Bars } from "react-loader-spinner";
 import { Car } from "../../types/types";
 import { useFavorites } from "../../hooks/useFavorites";
 import { CarList } from "../../components/CarList/CarList";
@@ -18,6 +16,8 @@ const CatalogPage = ()=>{
   const [cars, setCars] = useState<Car[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [page, setPage] = useState<number>(1);
+  const [error, setError] = useState<string>('');
+
   
   
   const disabledBtn = cars?.length/page < 8;
@@ -35,7 +35,8 @@ const CatalogPage = ()=>{
       setIsLoading(false)
   
     } catch (error) {
-      console.log(error.message)
+      console.log(error)
+      setError(error)
     }
   }
      getData()
@@ -46,9 +47,14 @@ const CatalogPage = ()=>{
     
   }
   
-
+  interface Values{
+    name: string;
+    price: string;
+    from: string;
+    to: string
+}
   
-  const handleSubmit = (values) => {
+  const handleSubmit = (values:Values) => {
     const { name, price, from, to } = values;
     let sortedCars: Car[];
     if (name !== '') {
@@ -60,7 +66,7 @@ const CatalogPage = ()=>{
       sortedCars = cars.filter(car => car.rentalPrice >= price)
     }
      if (from !== '') {
-      sortedCars = cars.filter(car => car.mileage >= from && car.mileage<= to)
+      sortedCars = cars.filter(car =>( car.mileage >= from) && (car.mileage<= to))
     }
     setCars(sortedCars);
 }
