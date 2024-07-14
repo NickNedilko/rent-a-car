@@ -4,11 +4,11 @@
 
 :root {
   --bgd-color: #eeeff4;
-  --bgd-header: linear-gradient(-45deg, #9925ea, #338aff, #9925ea);
-  --title-color: blueviolet;
+  --bgd-header: linear-gradient(-45deg, #613283, #3470FF, #41334a);
+  --title-color: #8a2be2;
   --text-header: #fff;
   --text-color: #173D33;
-  --hover-color: #FFFF00;
+  --hover-color: #f0c70d;
 
 
 }

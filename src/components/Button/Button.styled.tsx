@@ -10,6 +10,7 @@ line-height: 20px;
 font-weight: 600;
 color: #fff;
 border: transparent;
+cursor: pointer;
 background-color: #3470FF;
 &:hover{
     background-color: #0B44CD;

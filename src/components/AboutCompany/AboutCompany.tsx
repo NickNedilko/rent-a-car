@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom'
 import logo  from '../../assets/logo-rent-car.png'
-import { Img, Item, List, Wrapper } from './AboutCompany.styled'
+import { Btn, Img, Item, List, Title, Wrapper } from './AboutCompany.styled'
 
 
 
@@ -12,7 +13,7 @@ export const AboutCompany = () => {
          <Wrapper>
             <Img src={logo} alt="logo" />
             <div>
-                <h2>Prestige auto HIRE Concept</h2>
+                <Title>Prestige auto HIRE Concept</Title>
                 <List>
                     <Item>
                     Prestige auto rentals – our services are built around the needs of our clients. Not only is our fleet of luxurious cars stored in a professional and secure storage center but we also have the right mechanics, who are experienced in maintaining and servicing the cars. You can choose the right-fit vehicle.
@@ -24,6 +25,8 @@ export const AboutCompany = () => {
                     We have a team of experts who will fill you with every feature that your chosen car possesses. That way, you will be able to take complete advantage of the car and enjoy its usage to the maximum.
                 </Item>
                 </List>
+
+                <Btn to='catalog'>Car catalog</Btn>
             </div>
         </Wrapper>
     )

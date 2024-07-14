@@ -41,96 +41,7 @@ export const List = styled.ul`
         gap: 30px;
         margin-bottom: 30px;
     }
-
 `
-
-// export const StyledGithub = styled(Github)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: #FFF388;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-
-// `;
-
-// export const StyledLinkedin = styled(Linkedin)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: var(--hover-color);
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-// `;
-
-// export const StyledTeletram = styled(Telegram)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: var(--hover-color);
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-// `;
-
-// export const StyledTelephone = styled(Telephone)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: var(--hover-color);
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-  
-// `;
-
-// export const StyledEmail = styled(Email)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: var(--hover-color);
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-// `;
-
 const text = `
     font-weight: 400;
     font-size: 14px;
@@ -184,21 +95,3 @@ export const Text = styled.p`
     ${text}
     text-align: center;
 `
-
-
-// export const StyledArrow = styled(Arrow)`
-//     width: 30px;
-//     height: 30px;
-//     fill: #fff;
-//     cursor: pointer;
-
-//     &:hover,
-//     &:focus {
-//         fill: var(--hover-color);
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         width: 40px;
-//         height: 40px;
-//     }
-// `;

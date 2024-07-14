@@ -50,17 +50,19 @@ const CatalogPage = ()=>{
   
   const handleSubmit = (values) => {
     const { name, price, from, to } = values;
-
+    let sortedCars: Car[];
     if (name !== '') {
-      const sortedCars = cars.filter(car => car.make === name)
+      sortedCars = cars.filter(car => car.make === name)
       console.log('name', sortedCars)
       setCars(sortedCars);
     }
-    if (price !== '' ) {
-      const sortedCars = cars.filter(car => car.rentalPrice >= price)
-      console.log('price',sortedCars)
-      setCars(sortedCars);
+    if (price !== '') {
+      sortedCars = cars.filter(car => car.rentalPrice >= price)
     }
+     if (from !== '') {
+      sortedCars = cars.filter(car => car.mileage >= from && car.mileage<= to)
+    }
+    setCars(sortedCars);
 }
 
   return(

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const CarCard = styled.li`
     width: 274px;
     position: relative;
-    min-height: 426px;
+    min-height: 456px;
 `
 
 export const Img = styled.img`
@@ -17,14 +17,15 @@ export const Img = styled.img`
 `
 
 export const CarDescrp = styled.ul`
-    
     display: flex;
     flex-wrap: wrap;
+    height: 45px;
     gap: 6px;
     margin-bottom: 28px;
 `
 export const Wrapper = styled.div`
     display: flex;
+    height: 40px;
     margin-top: 14px;
     margin-bottom: 8px;
     justify-content: space-between;

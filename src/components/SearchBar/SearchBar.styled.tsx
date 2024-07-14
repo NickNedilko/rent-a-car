@@ -102,11 +102,13 @@ export const Button = styled.button`
   background: #3470ff;
   width: 136px;
   height: 48px;
+  border: 1px solid transparent;
   color: #fff;
   font-family: Manrope;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+  cursor: pointer;
   &:hover {
     background: #0b44cd;
   }
