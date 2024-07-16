@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { HashLink } from 'react-router-hash-link';
 
 
 export const StyledFooter = styled.footer`
@@ -68,7 +68,7 @@ export const StyledLink = styled.a`
     }
 `;
 
-export const StyledTextLink = styled(HashLink)`
+export const StyledTextLink = styled(Link)`
     ${text}
     position: relative;
     

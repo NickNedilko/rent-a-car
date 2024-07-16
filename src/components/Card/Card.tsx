@@ -16,7 +16,10 @@ export const Card: FC<CardProps> = ({car, toggleFavorite}) =>{
 const [isModal, setIsModal] = useState<boolean>(false);
 const toggleModal = ()=>{
 setIsModal(prevState => !prevState)}
-const { getLocal} = useFavorites();
+    const { getLocal } = useFavorites();
+    
+
+
 
 return(
 <>
